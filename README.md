@@ -49,3 +49,35 @@ Average.
 ### Big-O gösterimini yazınız.
 
 O(nlogn)
+
+## [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Root = 7
+
+1: 7 > 5 bu yüzden 7'nin soluna ekle.
+
+2: 7 > 1 & 5 > 1 bu yüzden 5'in soluna ekle.
+
+3: 8 > 7 bu yüzden 7'nin sağına ekle.
+
+5: 7 > 3 & 5 > 3 & 1 < 3 bu yüzden 1'in sağına ekle.
+
+6: 7 > 6 & 5 < 6 bu yüzden 7'nin soluna 5'in sağına ekle.
+
+7: 7 > 0 & 5 > 1 & 1 > 0 bu yüzden 7'nin soluna git 5'in soluna git 1'in soluna ekle.
+
+8: 7 < 9 & 8 < 9 bu yüzden 8'in sağına ekle.
+
+9 : 7 > 4 & 5 > 4 & 4 > 1 & 4 > 3 bu adımlar sonucu 3'ün sağına ekle.
+
+10 : 7 > 2 & 5 > 2 & 2 > 1 & 3 > 2 3'ün soluna ekle.
+
+             7
+            / \
+           5   8
+          / \   \
+         1   6   9
+        / \
+       0   3
+          / \
+         2   4
